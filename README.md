@@ -1,7 +1,7 @@
 `django-filterview` is a class based view on top of generic [ListView][0] with
 filtering of the queryset by mapping URL params into filter() arguments.
 
-	[0]: https://docs.djangoproject.com/en/1.3/ref/class-based-views/#listview
+[0]: https://docs.djangoproject.com/en/1.3/ref/class-based-views/#listview
 
 ## Installing
 
@@ -32,7 +32,10 @@ url params values to `filter()` arguments. For example:
 
 ## Params
 
-`djang-filterview` accepts all ListView arguments and additionally `mapping` argument.
+`djang-filterview` accepts all [ListView arguments][1] and additionally `mapping` argument.
+
+[1]: https://docs.djangoproject.com/en/1.3/ref/class-based-views/#django.views.generic.list.MultipleObjectMixin
+
 Required arguments are:
 
 * `model` - filtering queryset model object
