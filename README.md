@@ -39,9 +39,9 @@ url params values to `filter()` arguments. For example:
 Required arguments are:
 
 * `model` - filtering queryset model object
-*	`mapping` - dictionary with keys named like url params and lambda-function returning list of tuples.
+*	`mapping` - dictionary with keys named like url params and function object returning list of tuples.
 
-`mapping` dictionary lambda-function takes url param name and its value as arguments. Each tuple
+`mapping` dictionary function object takes url param name and its value as arguments. Each tuple
 of returned list has two items - first one is `filter()` argument name and the last
 is its value. So each url param can be mapped into two or more `filter()` argument.
 
