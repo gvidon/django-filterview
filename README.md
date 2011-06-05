@@ -52,9 +52,9 @@ Using above example mapping dictionary and url pattern
 
 	r'^(/(?P<name>[\w\d\s%]+))?(/(?P<gender>(M|F)))?(/(?P<age>[\d]+\-[\d]+))?/?$'
 
-Result `filter()` arguments are:
+Result `filter()` arguments for url `/Jhon/M/30-37` are:
 
-	filter(first_name=value, birtdate__range=(
+	filter(first_name=<value for name url param>, gender=<value for gender url param>, birtdate__range=(
 	
 		datetime.today() - timedelta( days=366*int(value.split('-')[1]) ),
 		datetime.today() - timedelta( days=365*int(value.split('-')[0]) ),
