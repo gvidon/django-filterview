@@ -32,7 +32,7 @@ url params values to `filter()` arguments. For example:
 
 ## Params
 
-`djang-filterview` accepts all [ListView arguments][1] and additionally `mapping` argument.
+`django-filterview` accepts all [ListView arguments][1] and additionally `mapping` argument.
 
 [1]: https://docs.djangoproject.com/en/1.3/ref/class-based-views/#django.views.generic.list.MultipleObjectMixin
 
